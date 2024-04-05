@@ -35,11 +35,11 @@ Full functionality of site - inccluding hovers, toggles, and page changes \
 
 - Developer: me 
 
-- [Box Shadows](https://getcssscan.com/css-box-shadow-examples )\
-- [Gradient Button inspo](https://codepen.io/JavaScriptJunkie/pen/pPRooV)\
-- [Dark/Light toggle button](https://codepen.io/avstorm/pen/jOEpBLW)\
-- [Gradient sun/moon icon](https://www.flaticon.com/free-icons/eclipse )\
-- [Link hover effect](https://codepen.io/team/css-tricks/pen/gOXMgxR)\
+- [Box Shadows](https://getcssscan.com/css-box-shadow-examples )
+- [Gradient Button inspo](https://codepen.io/JavaScriptJunkie/pen/pPRooV)
+- [Dark/Light toggle button](https://codepen.io/avstorm/pen/jOEpBLW)
+- [Gradient sun/moon icon](https://www.flaticon.com/free-icons/eclipse )
+- [Link hover effect](https://codepen.io/team/css-tricks/pen/gOXMgxR)
 
 - Bg Images created by me using [Canva](https://www.canva.com/)'s AI image creator specifically for this project
 - All other HTML/CSS/JS created by me with minor tweaks and fixes found throughout Google/Stack Overflow/W3Schools/MDN/etc.
