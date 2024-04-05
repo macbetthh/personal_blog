@@ -1,7 +1,8 @@
 /* --------MR WORLDWIDE -------- */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,28 +10,176 @@ body {
     min-height: 100vh;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+}
+
+p {
+    color: #272646;
+}
+
+button {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 1000;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
 .light-mode {
-    background-color: #fff;
-    color: #333;
+    background-color: #F5FBFD;
+    color: #272646;
 }
 
 .dark-mode {
-    background-color: #333;
-    color: #fff;
+    background-color: #302f56;
+    color: #F5FBFD;
+    
 }
+
+.dark-mode p {
+    color: #F5FBFD;
+    
+}
+.dark-mode .bgImg {
+    background-image: url("../images/darkmodebg.png ");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
 
 
 /* --------top of the class --------- */
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #dee7f9;
+    padding: 15px 0;
     text-align: center;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
+/* header #toggle-mode {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+
+} */
+
+header .headLeft,
+header .headRight {
+    width: calc(50% - 10px);
+    box-sizing: border-box; 
+}
+
+.headLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 50px;
+}
+
+.headRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-right: 100px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.dark-mode header,
+.dark-mode footer  {
+    background-color: #272646;
+}
+
+
+
+
+/*TODO: anchor colors*/
+/*TODO: Button Placement / make it look cool*/
+/*TODO: https://getcssscan.com/css-box-shadow-examples -- box shadow
+https://codepen.io/JavaScriptJunkie/pen/pPRooV -- gradient button inspo
+toggle button https://codepen.io/avstorm/pen/jOEpBLW
+-- icon  <a href="https://www.flaticon.com/free-icons/eclipse" title="eclipse icons">Eclipse icons created by Triangle Squad - Flaticon</a>*/
+
+
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px 0px 68px 0px;
+
+}
+
+
+
+.bgImg {
+    background-image: url("../images/compbackground.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+
+/* --------- button ------- */
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    &:focus{
+      outline: 0;
+    }
+}
+.toggle{
+    height: 32px;
+    width: 52px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
     margin: 0;
+    border: 2px solid #474755;
+    background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
+    transition: all .2s ease;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: white;
+      box-shadow: 0 1px 2px rgba(44,44,44,.2);
+      transition: all .2s cubic-bezier(.5,.1,.75,1.35);
+    }
+    
+      &:checked {
+          border-color: #654FEC;
+          &:after{
+            transform: translatex(20px);
+        }
+    }
 }
 
 
@@ -39,10 +188,14 @@ header h1 {
 /* --------- foot locker ---------- */
 
 footer {
-    background-color: #333;
+    background-color: #dee7f9;
     color: #fff;
-    padding: 20px 0;
+    padding: 5px 0;
     text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    z-index: 4;
 }
 
 /* Responsive Styles */

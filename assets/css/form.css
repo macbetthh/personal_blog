@@ -1,12 +1,13 @@
 /* -------- front page news -------- */
-
-.main-content {
-    padding: 20px;
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: space-between;
+form {
+    max-width: 800px;
+    margin: 120px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 20px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    backdrop-filter: blur(50px);
 }
+
 
 
 .main-content .leftCol,
@@ -14,19 +15,102 @@
     width: calc(50% - 10px);
     box-sizing: border-box; 
     padding: 10px; 
+
+}
+.rightCol {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    backdrop-filter: blur(15px);
+    z-index: 1;
 }
 
-.main-content .leftCol {
-    border-right: 5px solid #ccc;
+
+
+.rightCol h1 {
+    text-align: center;
+    font-size: 2.7vw;
+    font-weight: 900;
+    color: #466695;
+    text-shadow:  3px 3px 3px rgba(254, 221, 227, 1);
 }
 
-.main-content .rightCol {
-    border-left: 5px solid #ccc;
+.dark-mode h1 {
+    color: #F6C4D4;
+    text-shadow:  3px 3px 3px rgb(100, 119, 193,1);
 }
 
-#content {
-    width: 600px;
-    height: 100px;
+
+/* -------- Form specifics --------*/
+
+#username {
+    height: 35px;
+    width: 50%;
+}
+
+#title {
+    height: 35px;
+    width: 50%;
+}
+
+
+textarea {
+    height: 200px;
+    width: 100%;
+    line-height: 150%;
+    resize: vertical;
+}
+
+
+.feedback-input {
+    font-family: 'Khula', sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    border: transparent;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+[type="submit"] {
+    font-family: 'Cormorant Garamond', serif;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #AFDDFE, #D1B6F9, #FDC6E9);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+
+[type="submit"]:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+[type="submit"]:focus {
+    outline: none;
+}
+
+.dark-mode [type="submit"] {
+    color: #fff;
+    background-image: linear-gradient(to right, #785098, #736BB8, #657BC0);
 }
 
 

@@ -12,10 +12,11 @@ blogForm.addEventListener('submit', function(event) {
         const post = {
             username: username,
             title: title,
-            content: content
+            content: content,
+            datetime: new Date().toLocaleString()
         };
 
-        // store locally
+        // store locallys
         let posts = JSON.parse(localStorage.getItem('posts')) || [];
         posts.push(post);
         localStorage.setItem('posts', JSON.stringify(posts));

@@ -8,8 +8,9 @@ window.addEventListener('DOMContentLoaded', function() {
         postElement.classList.add('post');
         postElement.innerHTML = `
             <h2>${post.title}</h2>
+            <h3>By: ${post.username}</h3>
             <p>${post.content}</p>
-            <p>By: ${post.username}</p>
+            <h4>Posted on: ${post.datetime}</h4>
         `;
         blogPostsContainer.appendChild(postElement);
     });

@@ -5,7 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Blog - Posts</title>
+    <title>Beth's Blog Posts</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Khula" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/blog.css">
 </head>
@@ -14,26 +16,33 @@
 <body>
 
     <header>
-        <h1>Blog Posts</h1>
-        <button id="toggle-mode">Toggle Mode</button>
-        <button id="go-back">Back</button>
+        <div class="headLeft">
+            <h1 class="headLeft">Blog Posts</h1>
+        </div>
+        <div class="headRight">
+            <button id="go-back">Back</button>
+            <!-- <button id="toggle-mode">Toggle Mode</button> -->
+            <img src="./assets/images/eclipse.png">
+            <input type="checkbox" class="toggle" id="toggle-mode" checked>
+        </div>
     </header>
 
 
-    <main id="blog-posts">
+    <main class="main-content" id="blog-posts">
         <!-- posty malone lives here -->
     </main>
 
 
     <footer>
-        <p>Developed by Beth McKinney | | macbetthh</p>
+        <p>Developed by Beth McKinney | | <a href="https://macbetthh.github.io/mckinney_portfolio/" target="_blank" rel="noopener noreferrer"> macbetthh </a></p>
     </footer>
 
 
-
+    <script src="assets/js/logic.js" defer></script>
     <script src="assets/js/blog.js" defer></script>
 
 
 
 </body>
 </html>
+
