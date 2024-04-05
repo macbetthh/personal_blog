@@ -1,4 +1,4 @@
-/* --------MR WORLDWIDE -------- */
+/* --------MR WORLDWIDE --- Global attributes for both pages-------- */
 
 body {
     font-family: 'Khula', sans-serif;
@@ -49,37 +49,29 @@ button {
     background-size: 100vw 100vh;
 }
 
+
+/* ------ hover effect ------ */
 a {
     color: inherit;
     text-decoration: none;
 }
 
 a {
-  background:
-    linear-gradient(
-      to right,
-      rgba(100, 200, 200, 1),
-      rgba(100, 200, 200, 1)
-    ),
-    linear-gradient(
-      to right,
-      rgba(255, 0, 0, 1),
-      rgba(255, 0, 180, 1),
-      rgba(0, 100, 200, 1)
-  );
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
+    background: linear-gradient(to right,rgba(100, 200, 200, 1),rgba(100, 200, 200, 1)),
+    linear-gradient(to right,rgba(255, 0, 0, 1),rgba(255, 0, 180, 1),rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
 }
 
 a:hover {
-  background-size: 0 3px, 100% 3px;
+    background-size: 0 3px, 100% 3px;
 }
 
 
 
-/* --------top of the class --------- */
+/* --------top of the class (top of page)--------- */
 
 header {
     background-color: #dee7f9;
@@ -94,13 +86,6 @@ header {
     align-items: center;
 }
 
-/* header #toggle-mode {
-    margin-right: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-
-} */
 
 header .headLeft,
 header .headRight {
@@ -137,16 +122,6 @@ header img {
 
 
 
-
-/*TODO: anchor colors*/
-/*TODO: Button Placement / make it look cool*/
-/*TODO: https://getcssscan.com/css-box-shadow-examples -- box shadow
-https://codepen.io/JavaScriptJunkie/pen/pPRooV -- gradient button inspo
-toggle button https://codepen.io/avstorm/pen/jOEpBLW
--- icon  <a href="https://www.flaticon.com/free-icons/eclipse" title="eclipse icons">Eclipse icons created by Triangle Squad - Flaticon</a>*/
-
-
-
 .main-content {
     padding: 20px;
     display: flex;
@@ -166,7 +141,7 @@ toggle button https://codepen.io/avstorm/pen/jOEpBLW
 }
 
 
-/* --------- button ------- */
+/* --------- dark/light button ------- */
 
 input[type="checkbox"] {
     -webkit-appearance: none;
@@ -175,7 +150,7 @@ input[type="checkbox"] {
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
     &:focus{
-      outline: 0;
+    outline: 0;
     }
 }
 .toggle{
@@ -190,21 +165,21 @@ input[type="checkbox"] {
     transition: all .2s ease;
     
     &:after {
-      content: "";
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      background: white;
-      box-shadow: 0 1px 2px rgba(44,44,44,.2);
-      transition: all .2s cubic-bezier(.5,.1,.75,1.35);
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0 1px 2px rgba(44,44,44,.2);
+        transition: all .2s cubic-bezier(.5,.1,.75,1.35);
     }
     
-      &:checked {
-          border-color: #654FEC;
-          &:after{
+    &:checked {
+        border-color: #654FEC;
+        &:after{
             transform: translatex(20px);
         }
     }
@@ -226,6 +201,14 @@ footer {
     z-index: 4;
 }
 
-/* Responsive Styles */
 
 
+
+/* -------- Responsiveness --------*/
+@media screen and (max-width: 768px) {
+    .main-content .leftCol,
+    .main-content .rightCol {
+        width: 100%; 
+        padding: 0;
+    }
+}

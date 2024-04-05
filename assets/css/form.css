@@ -1,20 +1,9 @@
-/* -------- front page news -------- */
-form {
-    max-width: 800px;
-    margin: 120px auto;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 20px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    backdrop-filter: blur(50px);
-}
-
-
-
 .main-content .leftCol,
 .main-content .rightCol {
     width: calc(50% - 10px);
     box-sizing: border-box; 
     padding: 10px; 
+    flex-wrap: wrap;
 
 }
 .rightCol {
@@ -37,6 +26,23 @@ form {
     color: #F6C4D4;
     text-shadow:  3px 3px 3px rgb(100, 119, 193,1);
 }
+
+
+
+
+/* -------- front page news --- Form /right column of index.html -------- */
+form {
+    max-width: 800px;
+    margin: 120px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 20px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    backdrop-filter: blur(50px);
+}
+
+
+
+
 
 
 /* -------- Form specifics --------*/
@@ -74,6 +80,8 @@ textarea {
     box-sizing: border-box;
     outline:0;
 }
+
+/* ------ form submit button ----- */
 
 [type="submit"] {
     font-family: 'Cormorant Garamond', serif;
@@ -116,11 +124,3 @@ textarea {
 
 
 
-/* -------- Responsiveness --------*/
-@media screen and (max-width: 768px) {
-    .main-content .sidebar,
-    .main-content .content {
-        width: 100%; 
-        padding: 0;
-    }
-}

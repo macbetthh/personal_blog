@@ -1,4 +1,4 @@
-/* posty's styles */
+/* posty malone fashion -- blog post page - post & page specific styling */
 
 .post {
     border: 1px solid #ccc;
@@ -10,14 +10,10 @@
 }
 
 
-
-
 header h1 {
     font-size: 1.7vw;
     font-weight: 700;
 }
-
-
 
 .main-content {
     flex-direction: column;
@@ -41,7 +37,6 @@ button {
     padding-top: 20px;
     border-bottom: 1px solid black; 
 }
-
 
 
 #blog-posts h3{

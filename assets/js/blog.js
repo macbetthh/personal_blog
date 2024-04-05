@@ -1,4 +1,4 @@
-// load posty maloneys posts
+// load posty malone -- post loading from local storage function
 window.addEventListener('DOMContentLoaded', function() {
     const blogPostsContainer = document.getElementById('blog-posts');
     const posts = JSON.parse(localStorage.getItem('posts')) || [];
@@ -14,4 +14,11 @@ window.addEventListener('DOMContentLoaded', function() {
         `;
         blogPostsContainer.appendChild(postElement);
     });
+});
+
+// back back back it up -- back button functionality
+const backButton = document.getElementById('go-back');
+
+backButton.addEventListener('click', function() {
+    window.history.back();
 });

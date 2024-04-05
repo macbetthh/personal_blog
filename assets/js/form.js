@@ -1,4 +1,4 @@
-// submission is weakness
+// submission functions 
 const blogForm = document.getElementById('blog-form');
 
 blogForm.addEventListener('submit', function(event) {
@@ -16,12 +16,12 @@ blogForm.addEventListener('submit', function(event) {
             datetime: new Date().toLocaleString()
         };
 
-        // store locallys
+        // store local
         let posts = JSON.parse(localStorage.getItem('posts')) || [];
         posts.push(post);
         localStorage.setItem('posts', JSON.stringify(posts));
 
-        // got to post malones concert
+        // go to post malones concert  -- go to the posts page (blog.html) and see all stored locally
         window.location.href = 'blog.html';
     } else {
         alert('Please complete the form');
